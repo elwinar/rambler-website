@@ -13,14 +13,19 @@ html, body {
 	text-align: center;
 }
 
-section {
+div {
+	display: table;
 	height: 100%;
 	width: 100%;
 	margin: 0;
 	padding: 0;
-	padding-top: 40%;
 	box-sizing: border-box;
+}
+
+section {
 	position: relative;
+	display: table-cell;
+	vertical-align: middle;
 }
 
 section > *:first-child {
@@ -33,6 +38,7 @@ section > *:last-child {
 
 h1 {
 	font-size: 2em;
+	font-variant: small-caps;
 	text-transform: lowercase;
 }
 
@@ -62,21 +68,29 @@ a:hover:after {
 		<script src="please.js"></script>
 	</head>
 	<body>
-		<section>
-			<h1>Rambler</h1>
-			<a href="rambler-3.tar.gz">download</a>
-		</section>
-		<section>
+		<div>
+			<section>
+				<h1>Rambler</h1>
+				<a href="rambler-3.tar.gz">download</a>
+			</section>
+		</div>
+		<div>
+			<section>
 			<h1>Simple database versioning</h1>
 			<p>Your database should be a first-class citizen of your project.<br>
 			Rambler helps you giving it the same attention than the rest of your code while keeping out of you way</p>
-		</section>
-		<section>
+			</section>
+		</div>
+		<div>
+			<section>
 			<pre>ttyrec of a typical rambler run</pre>
-		</section>
-		<section>
+			</section>
+		</div>
+		<div>
+			<section>
 			<h1>Made by <a href="//elwinar.com">Elwinar</a></h1>
-		</section>
+			</section>
+		</div>
 		<script>
 (function() {
 	var sections = document.getElementsByTagName('section');
