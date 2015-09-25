@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Rambler</title>
+		<link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+		<link href="style.css" rel="stylesheet" type="text/css">
+		<script src="please.js"></script>
+	</head>
+	<body>
+		<section>
+			<h1>Rambler</h1>
+			<a href="rambler-3.tar.gz">download</a>
+		</section>
+		<section>
+			<h1>Simple database versioning</h1>
+			<p>Your database should be a first-class citizen of your project.<br>
+			Rambler helps you giving it the same attention than the rest of your code while keeping out of you way</p>
+		</section>
+		<section>
+			<pre>ttyrec of a typical rambler run</pre>
+		</section>
+		<section>
+			<h1>Made by <a href="//elwinar.com">Elwinar</a></h1>
+		</section>
+		<script>
+(function() {
+	var sections = document.getElementsByTagName('section');
+	for(var i = 0; i < sections.length; i++) {
+		sections[i].style.backgroundColor = Please.make_color();
+	}
+})();
+		</script>
+	</body>
+</html>
+
