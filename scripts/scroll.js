@@ -43,13 +43,13 @@ domready(function() {
 		switch (event.keyCode) {
 			case 38:
 				slide(UP);
+				event.preventDefault();
 				break;
 			case 40:
 				slide(DOWN);
+				event.preventDefault();
 				break;
 		}
-		event.preventDefault();
-		return false;
 	});
 
 	window.addEventListener('resize', function() {
